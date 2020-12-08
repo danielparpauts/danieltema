@@ -27,21 +27,21 @@ namespace danieltema
                 Text = "AUDI",
                 Detail = "Lühike info",
                 ImagePath = "aud.png",
-                TargetPage = typeof(Views.audi)
+                MojaPage = typeof(Views.audi)
             });
             list.Add(new MasterMenuItems()
             {
                 Text = "BMW",
                 Detail = "Natuke rohkem minu kogemisest",
                 ImagePath = "bmv.png",
-                TargetPage = typeof(Views.bmw)
+                MojaPage = typeof(Views.bmw)
             });
             list.Add(new MasterMenuItems()
             {
                 Text = "Mercedes",
                 Detail = "Natuke rohkem minu oskustest",
                 ImagePath = "mer.png",
-                TargetPage = typeof(Views.mercedes)
+                MojaPage = typeof(Views.mercedes)
 
             });
             list.Add(new MasterMenuItems()
@@ -49,7 +49,49 @@ namespace danieltema
                 Text = "Volkswagen",
                 Detail = "Ma olen uhke!!!",
                 ImagePath = "vols.png",
-                TargetPage = typeof(Views.Volkswagen)
+                MojaPage = typeof(Views.Volkswagen)
+            });
+            list.Add(new MasterMenuItems()
+            {
+                Text = "Ford",
+                Detail = "Ma olen uhke!!!",
+                ImagePath = "fort.png",
+                MojaPage = typeof(Views.Fort)
+            });
+            list.Add(new MasterMenuItems()
+            {
+                Text = "Lexus",
+                Detail = "Ma olen uhke!!!",
+                ImagePath = "leksus.png",
+                MojaPage = typeof(Views.Lexus)
+            });
+            list.Add(new MasterMenuItems()
+            {
+                Text = "Mazda",
+                Detail = "Ma olen uhke!!!",
+                ImagePath = "maz.jpg",
+                MojaPage = typeof(Views.Mazda)
+            });
+            list.Add(new MasterMenuItems()
+            {
+                Text = "Nissan",
+                Detail = "Ma olen uhke!!!",
+                ImagePath = "ni.png",
+                MojaPage = typeof(Views.Nissan)
+            });
+            list.Add(new MasterMenuItems()
+            {
+                Text = "Subaru",
+                Detail = "Ma olen uhke!!!",
+                ImagePath = "subara.png",
+                MojaPage = typeof(Views.Subaru)
+            });
+            list.Add(new MasterMenuItems()
+            {
+                Text = "Toyota",
+                Detail = "Ma olen uhke!!!",
+                ImagePath = "tojota.png",
+                MojaPage = typeof(Views.Toyota)
             });
             return list;
 
@@ -58,7 +100,7 @@ namespace danieltema
         private void aboutList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var selectedMenuItem = (MasterMenuItems)e.SelectedItem;
-            Type selectedPage = selectedMenuItem.TargetPage;
+            Type selectedPage = selectedMenuItem.MojaPage;
             Detail = new NavigationPage((Page)Activator.CreateInstance(selectedPage));
             IsPresented = false;
 

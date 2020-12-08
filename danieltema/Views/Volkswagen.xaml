@@ -3,12 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="danieltema.Views.Volkswagen">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" Margin="20">
-            <Label Text="Võidud" Font="20" TextColor="Black" HorizontalTextAlignment="Center"></Label>
-            <Label Text="1. võit" TextColor="Black" HorizontalTextAlignment="Start"></Label>
-            <Label Text="2. võit" TextColor="Black" HorizontalTextAlignment="Start"></Label>
-            <Label Text="3. võit" TextColor="Black" HorizontalTextAlignment="Start"></Label>
-            <Label Text="4. võit" TextColor="Black" HorizontalTextAlignment="Start"></Label>
+        <StackLayout HorizontalOptions="Center" Margin="10">
+            <Image x:Name="kartinka"></Image>
+            <Label x:Name="header" Text="Модели VOLKSWAGEN:" FontSize="Medium" />
+            <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>VW Golf 4</x:String>
+                    <x:String>VW Scirocco MK4</x:String>
+                    <x:String>VW Tiguan R Line 2020</x:String>
+                    <x:String>VW Passat B7</x:String>
+                </Picker.Items>
+            </Picker>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

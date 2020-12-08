@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace danieltema.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Volkswagen : ContentPage
+    public partial class Nissan : ContentPage
     {
-        public Volkswagen()
+        public Nissan()
         {
             InitializeComponent();
         }

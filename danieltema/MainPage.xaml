@@ -4,7 +4,7 @@
              x:Class="danieltema.MainPage">
 
     <MasterDetailPage.Master>
-        <ContentPage Title="Menu" BackgroundColor="Purple" Padding="10">
+        <ContentPage Title="Menu" BackgroundColor="Gray" Padding="10">
             <ContentPage.Content>
                 <StackLayout Margin="10" Orientation="Vertical">
                     <Image x:Name="profileImage"></Image>

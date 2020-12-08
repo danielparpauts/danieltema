@@ -16,5 +16,10 @@ namespace danieltema.Views
         {
             InitializeComponent();
         }
+
+        private void picker_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            header.Text = "Модель:" + picker.Items[picker.SelectedIndex];
+        }
     }
 }

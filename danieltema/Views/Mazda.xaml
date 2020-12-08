@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="danieltema.Views.bmw">
+             x:Class="danieltema.Views.Mazda">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" Margin="10">
             <Image x:Name="kartinka"></Image>
-            <Label x:Name="header" Text="Модели BMW:" FontSize="Medium" />
+            <Label x:Name="header" Text="Модели MAZDA:" FontSize="Medium" />
             <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged">
                 <Picker.Items>
-                    <x:String>BMW E60</x:String>
-                    <x:String>BMW E39</x:String>
-                    <x:String>BMW E38</x:String>
-                    <x:String>BMW E34</x:String>
+                    <x:String>Mazda RX7 1993</x:String>
+                    <x:String>Mazda RX8 2004</x:String>
+                    <x:String>Mazda RX5 Miata 1995</x:String>
+                    <x:String>Mazda RX6 1995</x:String>
                 </Picker.Items>
             </Picker>
         </StackLayout>
