@@ -13,7 +13,7 @@
                     <x:String>VW Tiguan R Line 2020</x:String>
                     <x:String>VW Passat B7</x:String>
                 </Picker.Items>
-            </Picker>
+            </Picker>1
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
